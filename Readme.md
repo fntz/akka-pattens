@@ -1,5 +1,5 @@
 
-# Example for akka patterns/anti-patterns 
+# Examples for akka patterns/anti-patterns 
 
 1. become/unbecome
 2. stash
@@ -14,7 +14,9 @@
 ### resources:
 
 [letitcrash](http://letitcrash.com/)
+
 [akka blog](http://blog.akka.io/)
+
 [akka-patterns](https://github.com/sksamuel/akka-patterns)
 
 
