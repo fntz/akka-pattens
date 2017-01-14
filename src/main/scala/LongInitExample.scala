@@ -6,6 +6,7 @@ import akka.util.Timeout
 import scala.concurrent.Future
 
 import scala.concurrent.duration._
+import scala.language.postfixOps
 
 object LongInitExample extends CommonSystem {
 
@@ -40,11 +41,6 @@ object LongInitExample extends CommonSystem {
 
       case LongInitialize.Done =>
         println("done")
-
-        Future{1}.flatMap { x =>
-          Future{x + 1}.map { y => y + 1 }
-        }
-
         unstashAll()
         become(initialized)
 

@@ -3,6 +3,7 @@ import akka.actor._
 import akka.pattern._
 
 import scala.concurrent.duration._
+import scala.language.postfixOps
 
 object CircuitBreakerTellExample extends CommonSystem {
 
